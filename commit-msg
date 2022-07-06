@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if test -e ./.git/hooks/commit-msg ; then
+   sh ./.git/hooks/commit-msg
+fi
+
+commit_message_path="$1"
+commit_message=$(cat ${commit_message_path})
+
+npx --no-install commitlint <<< ${commit_message}

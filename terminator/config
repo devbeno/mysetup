@@ -1,0 +1,99 @@
+[global_config]
+[keybindings]
+  close_term = <Primary><Shift>w
+  next_tab = <Primary>Tab
+  prev_tab = <Primary><Shift>Tab
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    background_color = "#131313"
+    background_image = None
+    cursor_color = "#b9b9b9"
+    foreground_color = "#d6dbe5"
+    palette = "#1f1f1f:#ff0007:#2dc55e:#ecba0f:#2a84d2:#4e5ab7:#1081d6:#d6dbe5:#d6dbe5:#ec1910:#1dd361:#f3bd09:#1081d6:#5350b9:#0f7ddb:#ffffff"
+  [[3024 Day]]
+    background_color = "#f7f7f7"
+    background_image = None
+    cursor_color = "#4a4543"
+    foreground_color = "#4a4543"
+    palette = "#090300:#db2d20:#01a252:#fded02:#01a0e4:#a16a94:#b5e4f4:#a5a2a2:#5c5855:#e8bbd0:#3a3432:#4a4543:#807d7c:#d6d5d4:#cdab53:#f7f7f7"
+  [[3024 Night]]
+    background_color = "#090300"
+    background_image = None
+    cursor_color = "#a5a2a2"
+    foreground_color = "#a5a2a2"
+    palette = "#090300:#db2d20:#01a252:#fded02:#01a0e4:#a16a94:#b5e4f4:#a5a2a2:#5c5855:#e8bbd0:#3a3432:#4a4543:#807d7c:#d6d5d4:#cdab53:#f7f7f7"
+  [[Afterglow]]
+    background_color = "#212121"
+    background_image = None
+    cursor_color = "#d0d0d0"
+    foreground_color = "#d0d0d0"
+    palette = "#151515:#ac4142:#7e8e50:#e5b567:#6c99bb:#9f4e85:#7dd6cf:#d0d0d0:#505050:#ac4142:#7e8e50:#e5b567:#6c99bb:#9f4e85:#7dd6cf:#f5f5f5"
+  [[Argonaut]]
+    background_color = "#0e1019"
+    background_image = None
+    cursor_color = "#ff0018"
+    foreground_color = "#fffaf4"
+    palette = "#232323:#ff000f:#8ce10b:#ffb900:#008df8:#6d43a6:#00d8eb:#ffffff:#444444:#ff2740:#abe15b:#ffd242:#0092ff:#9a5feb:#67fff0:#ffffff"
+  [[Arthur]]
+    background_color = "#1c1c1c"
+    background_image = None
+    cursor_color = "#e2bbef"
+    foreground_color = "#ddeedd"
+    palette = "#3d352a:#cd5c5c:#86af80:#e8ae5b:#6495ed:#deb887:#b0c4de:#bbaa99:#554444:#cc5533:#88aa22:#ffa75d:#87ceeb:#996600:#b0c4de:#ddccbb"
+  [[Atom]]
+    background_color = "#161719"
+    background_image = None
+    cursor_color = "#d0d0d0"
+    foreground_color = "#c5c8c6"
+    palette = "#000000:#fd5ff1:#87c38a:#ffd7b1:#85befd:#b9b6fc:#85befd:#e0e0e0:#000000:#fd5ff1:#94fa36:#f5ffa8:#96cbfe:#b9b6fc:#85befd:#e0e0e0"
+  [[Batman]]
+    background_color = "#1b1d1e"
+    background_image = None
+    cursor_color = "#fcef0c"
+    foreground_color = "#6f6f6f"
+    palette = "#1b1d1e:#e6dc44:#c8be46:#f4fd22:#737174:#747271:#62605f:#c6c5bf:#505354:#fff78e:#fff27d:#feed6c:#919495:#9a9a9d:#a3a3a6:#dadbd6"
+  [[Broadcast]]
+    background_color = "#2b2b2b"
+    background_image = None
+    cursor_color = "#ffffff"
+    foreground_color = "#e6e1dc"
+    palette = "#000000:#da4939:#519f50:#ffd24a:#6d9cbe:#d0d0ff:#6e9cbe:#ffffff:#323232:#ff7b6b:#83d182:#ffff7c:#9fcef0:#ffffff:#a0cef0:#ffffff"
+  [[Brogrammer]]
+    background_color = "#131313"
+    background_image = None
+    cursor_color = "#b9b9b9"
+    foreground_color = "#d6dbe5"
+    palette = "#1f1f1f:#f81118:#2dc55e:#ecba0f:#2a84d2:#4e5ab7:#1081d6:#d6dbe5:#d6dbe5:#de352e:#1dd361:#f3bd09:#1081d6:#5350b9:#0f7ddb:#ffffff"
+  [[Cobalt2]]
+    background_color = "#132738"
+    background_image = None
+    cursor_color = "#f0cc09"
+    foreground_color = "#ffffff"
+    palette = "#000000:#ff0000:#38de21:#ffe50a:#1460d2:#ff005d:#00bbbb:#bbbbbb:#555555:#f40e17:#3bd01d:#edc809:#5555ff:#ff55ff:#6ae3fa:#ffffff"
+  [[Darkside]]
+    background_color = "#222324"
+    background_image = None
+    cursor_color = "#bbbbbb"
+    foreground_color = "#bababa"
+    palette = "#000000:#e8341c:#68c256:#f2d42c:#1c98e8:#8e69c9:#1c98e8:#bababa:#000000:#e05a4f:#77b869:#efd64b:#387cd3:#957bbe:#3d97e2:#bababa"
+  [[Elementary]]
+    background_color = "#181818"
+    background_image = None
+    cursor_color = "#bbbbbb"
+    foreground_color = "#efefef"
+    palette = "#242424:#d71c15:#5aa513:#fdb40c:#063b8c:#e40038:#2595e1:#efefef:#4b4b4b:#fc1c18:#6bc219:#fec80e:#0955ff:#fb0050:#3ea8fc:#8c00ec"
+  [[Tomorrow Night]]
+    background_color = "#1d1f21"
+    background_image = None
+    cursor_color = "#c5c8c6"
+    foreground_color = "#c5c8c6"
+    palette = "#000000:#cc6666:#b5bd68:#f0c674:#81a2be:#b294bb:#8abeb7:#ffffff:#000000:#cc6666:#b5bd68:#f0c674:#81a2be:#b294bb:#8abeb7:#ffffff"

@@ -1,0 +1,85 @@
+" Comment the following line if you don't want Vim and NeoVim to share the
+" same plugin download directory.
+let g:spacevim_plug_home = '~/.vim/plugged'
+
+" Uncomment the following line to override the leader key. The default value is space key "<\Space>".
+" let g:spacevim_leader = "<\Space>"
+
+" Uncomment the following line to override the local leader key. The default value is comma ','.
+" let g:spacevim_localleader = ','
+
+" Enable the existing layers in space-vim.
+" Refer to https://github.com/liuchengxu/space-vim/blob/master/layers/LAYERS.md for all available layers.
+let g:spacevim_layers = [
+      \ 'fzf', 'better-defaults', 'which-key', 'file-manager', 'editing', 'auto-completion', 'text-align', 'formatting', 'airline', 'docker', 'git', 'ctrlp',
+      \ 'go', 'rust', 'java', 'html', 'javascript', 'markdown', 'python'
+      \ ]
+
+" Uncomment the following line if your terminal(-emulator) supports true colors.
+" let g:spacevim_enable_true_color = 1
+
+" Uncomment the following if you have some nerd font installed.
+" let g:spacevim_nerd_fonts = 1
+
+" If you want to have more control over the layer, try using Layer command.
+" if g:spacevim.gui
+"   Layer 'airline'
+" endif
+
+" Manage your own plugins.
+" Refer to https://github.com/junegunn/vim-plug for more detials.
+function! UserInit()
+
+  " Add your own plugin via Plug command.
+  Plug 'junegunn/seoul256.vim'
+  Plug 'bogado/file-line'
+  Plug 'mbbill/undotree'
+  Plug 'editorconfig/editorconfig-vim'
+
+endfunction
+
+" Override the default settings from space-vim as well as adding extras
+function! UserConfig()
+
+  " Override the default settings.
+  " Uncomment the following line to disable relative number.
+  " set norelativenumber
+
+  " Adding extras.
+  " Uncomment the following line If you have installed the powerline fonts.
+  " It is good for airline layer.
+  " let g:airline_powerline_fonts = 1
+  command! -bang -nargs=* -complete=file E e<bang> <args>
+  command! -bang -nargs=* -complete=file W w<bang> <args>
+  command! -bang -nargs=* -complete=file Wq wq<bang> <args>
+  command! -bang -nargs=* -complete=file WQ wq<bang> <args>
+  command! -bang Wa wa<bang>
+  command! -bang WA wa<bang>
+  command! -bang Q q<bang>
+  command! -bang QA qa<bang>
+  command! -bang Qa qa<bang>
+
+  set norelativenumber
+  set mouse=a
+
+  let parent = $HOME
+  let prefix = 'vim'
+  let common_dir = parent . '/.' . prefix
+  let directory = common_dir . '/undodir/'
+
+  if exists("*mkdir")
+    if !isdirectory(directory)
+      call mkdir(directory)
+    endif
+  endif
+  if !isdirectory(directory)
+    echo "Warning: Unable to create backup directory: " . directory
+    echo "Try: mkdir -p " . directory
+  endif
+  
+  set undodir=~/.vim/undodir
+  set undofile                " So is persistent undo ...
+  set undolevels=1000         " Maximum number of changes that can be undone
+  set undoreload=10000        " Maximum number lines to save for undo on a buffer reload
+
+endfunction
